@@ -3,8 +3,8 @@ import serial
 
 from twilio.rest import Client
 def send_msg(msg,load):
-  account_sid = "AC15ad7f2417dd92290cb0cc1a2ce51f9a"
-  auth_token = "c43fea34d2c70c754c326b6bbbf82a86"
+  account_sid = "***************"
+  auth_token = "**************"
   client = Client(account_sid,auth_token)
   message = client.messages.create(to="+917011792723", from_="+13163335246", body= msg + "Overloading is : " + load +"watt")
   print (message.sid)
